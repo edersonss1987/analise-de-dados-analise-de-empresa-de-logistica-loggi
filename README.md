@@ -297,7 +297,7 @@ lgnd = plt.legend(prop={"size": 15})
 for handle in lgnd.legendHandles:
     handle.set_sizes([50])
 
-    #Plorando uma média da distância entre os Hubs e os destinos
+    #Plotando uma média da distância entre os Hubs e os destinos
 with sns.axes_style('whitegrid'):
   grafico = sns.barplot(data=data_mean_distance, x="regiao_do_hub", y="distance_hub_delivery", ci=None, palette="bright")
   grafico.set(title='Média de Km percorrido entre o Hub e o local da entrega', xlabel='Hub', ylabel='Média de Km percorrido');
